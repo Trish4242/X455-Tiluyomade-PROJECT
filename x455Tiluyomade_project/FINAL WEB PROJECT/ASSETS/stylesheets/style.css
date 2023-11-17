@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  min-height: 8vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #423742;
+  color: aliceblue;
+}
+.image-container {
+  position: relative;
+  width: 300px; /* Width of the container */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;  /* Positioning the text */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering the text */
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px;
+}
+
+  
+  .hiking-logo {
+      display: left;
+      color: aliceblue;
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      font-size: 25px;
+      margin: auto;
+      font-family: "battery-park", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em,1em,1em,1em;
+  width: 40%;
+  margin: 0;
+  }
+
+.nav-links a {
+  display: flex;
+  background-color: #423742;
+  color: aliceblue;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px; 
+}
+.nav-links li {
+  list-style: none;
+} 
+.ul {
+  background-color: #384238;
+  color: aliceblue;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px; 
+}
+
+.burger div {
+  display: right;
+  width: 25px;
+  height: 3px;
+  background-color: aliceblue;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and ( max-width:768px){
+  body { overflow-x: hidden;
+}  }
+
+.nav-links{
+  position:fixed;
+  right: 0px;
+  height: 92vh;
+  top: 8vh;
+  background-color: #423742;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+.nav-links li {
+  opacity: 0;
+}
+.burger {
+  display:block;
+  cursor: pointer;
+}
+
+nav :active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px,6px);
+}
+
+.footer-links{
+  display: flex;
+  list-style: none;
+  
+}
+
+.Hiking-image {
+border-image: fill;
+}
+
+ 
+.footer-content {
+  background-color: #384238;
+  float: center;
+  padding: auto;
+}
+.social-icon {
+  list-style: none;
+  letter-spacing: 3px;
+}
+
+.clear {
+  clear:both}
+
+
+
+
+.navbar{
+  background-color: #423742;
+  color: aliceblue;
+  padding: 2rem;
+
+}
+
+nav {
+  background-color: #423742;
+  color: aliceblue;
+  padding: 2rem;
+}
+
+ nav ul {
+  display: flex;
+  list-style: none;
+ }
+ nav li {
+display: flex;
+  margin: 0rem 4rem;
+  list-style: none;
+ }
+ .footer-links{
+  display: flex;
+  list-style: none;
+}
+ 
+.footer-content {
+  background-color: #384238;
+  float: center;
+  padding: 1rem;
+}
+.social-icon {
+  list-style: none;
+}
+.hero-icons{
+  text-align: center;
+}   
+
+
+
+
+
+
+.logoimage{
+  position: absolute;
+  height: auto;
+  left: 0px;
+  width: 250px;
+}
+.container {
+  background-color: aqua;
+}
+.hero{
+  padding: 0;
+  margin: 0;
+}
